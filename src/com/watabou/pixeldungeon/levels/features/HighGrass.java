@@ -55,7 +55,7 @@ public class HighGrass {
 			}
 			
 			// Dew
-			if (herbalismLevel >= 0 && Random.Int( 6 ) <= Random.Int( herbalismLevel + 1 )) {
+			if (herbalismLevel > 0 && Random.Int( 6 ) <= Random.Int( herbalismLevel + 1 )) {
 				level.drop( new Dewdrop(), pos ).sprite.drop();
 			}
 		}
